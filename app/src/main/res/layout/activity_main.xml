@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#ACBDAD"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivAdminProfile"
+        android:layout_width="269dp"
+        android:layout_height="358dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:contentDescription="Logo"
+        android:src="@mipmap/ic_logo" />
+
+    <TextView
+        android:id="@+id/activeUsersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Study Board!"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/startedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#BCDFCBCB"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:text="Get Started" />
+
+
+</LinearLayout>

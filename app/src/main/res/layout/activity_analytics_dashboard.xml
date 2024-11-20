@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnalyticsDashboardActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Analytics Dashboard"
+        android:background="@color/green"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Active Users Count -->
+    <TextView
+        android:id="@+id/activeUsersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active Users: 0"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- App Downloads Count -->
+    <TextView
+        android:id="@+id/appDownloadsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Downloads: 0"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/activeUsersText"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- User Engagement Chart -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/engagementChart"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/appDownloadsText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_margin="16dp"
+        android:background="@color/green"
+        tools:ignore="MissingClass" />
+
+    <!-- Content Engagement Stats -->
+    <TextView
+        android:id="@+id/contentEngagementText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Most Engaged Content: -"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/engagementChart"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Test/Quiz Performance -->
+    <TextView
+        android:id="@+id/quizPerformanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Performance: -"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/contentEngagementText"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Custom Report Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/generateCustomReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Custom Report"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/quizPerformanceText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- RecyclerView to display detailed report data -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detailedReportsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/generateCustomReportButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

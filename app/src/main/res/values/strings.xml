@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Study Application</string>
+    <string name="do_not_have_an_account_register">Do not have an account? Register</string>
+
+    <string-array name="role_array">
+        <item>User</item>
+        <item>Admin</item>
+    </string-array>
+</resources>

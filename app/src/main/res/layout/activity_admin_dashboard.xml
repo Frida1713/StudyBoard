@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".AdminDashboardActivity"
+    tools:ignore="ExtraText">
+
+    <!-- Admin Profile Management -->
+    <LinearLayout
+        android:id="@+id/lnAdminProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="100dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivAdminProfile"
+            android:layout_width="62dp"
+            android:layout_height="59dp"
+            android:contentDescription="Admin Profile"
+            android:src="@mipmap/ic_profile" />
+
+        <TextView
+            android:id="@+id/tvAdminProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Admin Profile Management"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- User Management -->
+    <LinearLayout
+        android:id="@+id/lnUserManagement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/lnAdminProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivUserManagement"
+            android:layout_width="62dp"
+            android:layout_height="59dp"
+            android:src="@mipmap/ic_user_manager"
+            android:contentDescription="User Management" />
+
+        <TextView
+            android:id="@+id/tvUserManagement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Management"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Content Management -->
+    <LinearLayout
+        android:id="@+id/lnContentManagement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/lnUserManagement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivContentManagement"
+            android:layout_width="62dp"
+            android:layout_height="59dp"
+            android:src="@mipmap/ic_content_manage"
+            android:contentDescription="Content Management" />
+
+        <TextView
+            android:id="@+id/tvContentManagement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content Management"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Quiz/Test Management -->
+    <LinearLayout
+        android:id="@+id/lnQuizTestManagement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/lnContentManagement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivQuizTestManagement"
+            android:layout_width="62dp"
+            android:layout_height="59dp"
+            android:src="@mipmap/ic_quizzes_manage"
+            android:contentDescription="Quiz/Test Management" />
+
+        <TextView
+            android:id="@+id/tvQuizTestManagement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz/Test Management"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Push Notification Management -->
+    <LinearLayout
+        android:id="@+id/lnPushNotificationManagement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/lnQuizTestManagement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivPushNotificationManagement"
+            android:layout_width="62dp"
+            android:layout_height="59dp"
+            android:src="@mipmap/ic_notifications"
+            android:contentDescription="Push Notification Management" />
+
+        <TextView
+            android:id="@+id/tvPushNotificationManagement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Push Notification Management"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    < tools:ignore="MissingConstraints"="MissingConstraints" />!
+
+    <!-- Analytics Dashboard -->
+    <LinearLayout
+        android:id="@+id/lnAnalyticsDashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/lnPushNotificationManagement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivAnalyticsDashboard"
+            android:layout_width="62dp"
+            android:layout_height="59dp"
+            android:src="@mipmap/ic_analytics"
+            android:contentDescription="Analytics Dashboard" />
+
+        <TextView
+            android:id="@+id/tvAnalyticsDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analytics Dashboard"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
