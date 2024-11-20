@@ -1,0 +1,89 @@
+We welcome contributions to StudyBoard! Whether you're reporting bugs, suggesting features, improving documentation, or contributing code, your input is valuable. This document outlines the guidelines for contributing to the project.
+
+🛠 Prerequisites
+Before contributing, ensure you have:
+1.	Git installed.
+2.	Android Studio (2021.1 or later) set up.
+3.	Familiarity with Java or Kotlin for Android development.
+
+
+🚀 How to Contribute
+1. Fork the Repository
+1.	Navigate to the StudyBoard repository.
+2.	Click the Fork button (top-right corner).
+2. Clone the Repository
+Clone the forked repository to your local machine:
+bash
+Copy code
+git clone https://github.com/your-username/StudyBoard.git  
+cd StudyBoard  
+3. Create a Feature Branch
+Create a branch to work on a specific feature or bug:
+bash
+Copy code
+git checkout -b feature/your-feature-name  
+4. Make Changes
+•	Follow the project's coding standards (e.g., MVVM pattern for Android).
+•	Write clear and concise code with comments where necessary.
+•	Test your changes thoroughly before committing.
+5. Commit Your Changes
+Commit changes using a descriptive message:
+bash
+Copy code
+git add .  
+git commit -m "Add feature: brief description of the changes"  
+6. Push to GitHub
+Push the changes to your forked repository:
+bash
+Copy code
+git push origin feature/your-feature-name  
+7. Submit a Pull Request
+1.	Go to the original repository: StudyBoard.
+2.	Click New Pull Request.
+3.	Select your forked repository and branch.
+4.	Provide a detailed description of your changes.
+
+
+💡 Guidelines
+Reporting Bugs
+•	Use the Issue Tracker.
+•	Include clear steps to reproduce the bug.
+•	Provide screenshots or logs if applicable.
+Suggesting Features
+•	Open an issue labeled as feature request.
+•	Describe the feature and its potential benefits.
+Code Style
+•	Follow Android Code Style Guidelines.
+•	Use consistent naming conventions and indentation.
+•	Keep code modular and reusable.
+Documentation
+•	Update relevant documentation when adding new features.
+•	Keep comments concise and meaningful.
+
+
+🧪 Testing
+All contributions should include appropriate tests:
+1.	Unit Tests for individual methods or components.
+2.	Integration Tests for interactions between components.
+3.	Ensure all tests pass before submitting a pull request.
+Run tests locally:
+bash
+Copy code
+./gradlew test  
+
+
+🤝 Code of Conduct
+By contributing, you agree to uphold the project's Code of Conduct.
+
+
+📞 Need Help?
+For any questions, feel free to:
+•	Open an issue.
+•	Contact the project maintainer:
+o	Email: your.email@example.com
+o	GitHub: your-username
+
+
+Thank you for contributing to StudyBoard!
+
+
